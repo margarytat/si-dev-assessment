@@ -4,12 +4,11 @@
 <p>Message a phone via this web page</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
   <%= label_tag(:p, "Destination phone number:") %>
-  <%= text_field_tag(:p) %>
+  <%= text_field_tag(:phone) %>
   <p></p>
   <%= label_tag(:m, "Type message:") %>
-  <%= text_field_tag(:m) %>
+  <%= text_field_tag(:msg) %>
   <p></p>
   <%= submit_tag("Send") %>
 <% end %>
