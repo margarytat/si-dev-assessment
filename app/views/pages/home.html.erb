@@ -1,6 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- in the spirit of creating an MVP, I'll do the styling later /when necessary-->
+
+<h1>Margaryta's SMS app</h1>
+<p>Message a phone via this web page</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
+  <%= label_tag(:p, "Destination phone number:") %>
+  <%= text_field_tag(:p) %>
+  <p></p>
+  <%= label_tag(:m, "Type message:") %>
+  <%= text_field_tag(:m) %>
+  <%= submit_tag("Send") %>
 <% end %>
