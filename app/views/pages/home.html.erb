@@ -1,7 +1,7 @@
-<!-- in the spirit of creating an MVP, I'll do the styling later /when necessary-->
+<!-- in the spirit of creating an MVP, I'll do the styling later, if/when necessary-->
 
 <h1>Margaryta's SMS app</h1>
-<p>Message a phone via this web page</p>
+<p>Send a message to a US phone number via this web page</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
   <%= label_tag(:p, "Destination phone number:") %>
