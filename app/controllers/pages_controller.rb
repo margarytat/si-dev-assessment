@@ -28,7 +28,7 @@ class PagesController < ApplicationController
         @sms_result = "Your message was sent."
         puts message.sid  
       rescue Twilio::REST::RestError => error
-        @sms_result = "You failed as a Twilio user."
+        @sms_result = "You failed as a Twilio user. The message was not sent."
       end
     else
       @sms_result = "You failed as a human being. The entered phone number is invalid."
