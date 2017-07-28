@@ -33,6 +33,9 @@ gem 'twilio-ruby'
 # use figaro to set and read environment variables
 gem 'figaro'
 
+# for phone number validation
+gem 'phonelib'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
